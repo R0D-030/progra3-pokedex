@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -62,9 +63,9 @@
                         android:background="@drawable/round_box"
                         android:gravity="center"
                         android:padding="20dp"
-                        android:text="@string/main_activity_instructions"
+                        android:text="Listo para iniciar tu aventura"
                         android:textColor="@color/colorBlack"
-                        android:textSize="18sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
             </FrameLayout>
 
@@ -80,11 +81,7 @@
             android:layout_gravity="start"
             android:fitsSystemWindows="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Aqui agregaremos elementos!" />
+            <include layout="@layout/drawer_layout"/>
 
         </android.support.design.widget.NavigationView>
 

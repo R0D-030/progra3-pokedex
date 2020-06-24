@@ -58,7 +58,9 @@ El archivo `res/values/strings.xml` contiene todos los textos que necesitamos mo
 El archivo `res/values/colors.xml` contiene todos los colores (Hexadecimales) que necesitaremos.
 
 ## 3. Creemos nuestro primer menu deslizante (Navigation Drawer)
-Para nuestro menú de itpo navigation drawer crearemos un dos nuevos layouts llamados: `drawer_layout` y `drawer_header_layout` se ubicarán en `res/layout/drawer_layout.xml` y `res/layout/drawer_header_layout.xml`
+Para nuestro menú de tipo navigation drawer crearemos un dos nuevos layouts llamados:
+`drawer_layout` y `drawer_header_layout` se ubicarán en `res/layout/drawer_layout.xml` y
+ `res/layout/drawer_header_layout.xml`
 
 ### drawer_header_layout.xml
 ```
@@ -117,11 +119,14 @@ Para nuestro menú de itpo navigation drawer crearemos un dos nuevos layouts lla
 </LinearLayout>
 ```
 
-La función `<include layout="my_layout"/>` nos permite insertar layouts dentro de un layout padre con el objetivo de ordenar el código y que se pueda utilizar layouts diferentes según su responsabilidad.
+La función `<include layout="my_layout"/>` nos permite insertar layouts dentro de un layout padre
+con el objetivo de ordenar el código y que se pueda utilizar layouts diferentes según su responsabilidad.
 
-En este caso `res/layout/drawer_header_layout.xml` estaraá dentro de `res/layout/drawer_layout.xml` y tendrá la funcionalidad de mostrar info del usuario.
+En este caso `res/layout/drawer_header_layout.xml` estaraá dentro de `res/layout/drawer_layout.xml`
+y tendrá la funcionalidad de mostrar info del usuario.
 
-Para adicionar el menú a nuestra activity abrimos `activity_main.xml` y borramos el textView de la parte inferior (NavigationView) que tiene y lo reemplazamos con:
+Para adicionar el menú a nuestra activity, abrimos `activity_main.xml` y borramos el textView de la
+parte inferior (NavigationView) que tiene y lo reemplazamos con:
 
 ```
 <include layout="@layout/drawer_layout"/>
